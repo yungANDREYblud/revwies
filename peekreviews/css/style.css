@@ -1,0 +1,114 @@
+:root {
+    --color_red: #FF0000;
+    --color_orange: #FF7C33;
+    --color_white: #FFFFFF;
+    --color_black: #171A1A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-image: url(/img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    display: grid;
+    grid-template-columns: 60px 5fr 1fr;
+    grid-template-rows: 60px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px 5%;
+    column-gap: 20px;
+}
+.logo img{
+    width: 120%;
+    height: 120%;
+}
+.logo .menu{
+    padding-left: 200px;
+    width: 80%;
+}
+.logo .menu nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    font-size: 16px;
+    font-weight: medium;
+}
+.logo .menu nav ul li a{
+    display: block;
+    text-align: center;
+    height: 120%;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+}
+.logo .menu nav ul li a:hover{
+    color: var(--color_orange);
+    background-color: var(--color_white);
+    border-radius: 0 5px 0 5px;
+}
+.logo .links{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: right;
+}
+.logo .links a i{
+    font-size: 23px;
+}
+.ost{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.ost textarea{
+    width: 633px;
+    height: 154px;
+    resize: none;
+    border-radius: 25px 25px 0 0;
+    border: none;
+}
+.ost {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    row-gap: 20px;
+    padding-top: 90px;
+}
+.ost button{
+    width: 120px;
+    height: 44px;
+    border-radius: 0 5px 0 5px;
+    border: none;
+    background-color: var(--color_orange);
+    color: white;
+    transition: all 0.6s ease;
+    justify-self: end;
+}
+.ost button:hover{
+    background-color: var(--color_white);
+    border: 1px solid var(--color_orange);
+    color: var(--color_black);
+}
+.ost form textarea{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.ost form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+
+
